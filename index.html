@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>Web Design for Trades in Lincolnshire | Lincs Trade Sites</title>
+  <meta name="description" content="High-performance, custom web design and local SEO systems for tradespeople, contractors, and construction firms across Lincolnshire. Dominate local search today.">
+  <meta name="keywords" content="web design Lincolnshire, tradesman websites, contractor web design, local SEO Lincolnshire, trade website builder">
+  <meta name="author" content="Lincs Trade Sites">
+  <link rel="canonical" href="https://www.lincstradesites.co.uk/" />
+
+  <!-- Open Graph / Facebook / LinkedIn (Streamlined) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.lincstradesites.co.uk/">
+  <meta property="og:title" content="Web Design for Trades in Lincolnshire | Lincs Trade Sites">
+  <meta property="og:description" content="High-performance, custom web design and local SEO systems for tradespeople, contractors, and construction firms across Lincolnshire.">
+
+  <!-- Twitter (Streamlined) -->
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:url" content="https://www.lincstradesites.co.uk/">
+  <meta property="twitter:title" content="Web Design for Trades in Lincolnshire | Lincs Trade Sites">
+  <meta property="twitter:description" content="High-performance, custom web design and local SEO systems for tradespeople, contractors, and construction firms across Lincolnshire.">
+
+  <!-- Local Business JSON-LD Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Lincs Trade Sites",
+    "description": "High-performance web infrastructure and local SEO for Lincolnshire's elite trade operations.",
+    "url": "https://www.lincstradesites.co.uk",
+    "areaServed": {
+      "@type": "State",
+      "name": "Lincolnshire"
+    },
+    "knowsAbout": ["Web Design", "Local SEO", "Contractor Websites", "Trade Web Development"],
+    "priceRange": "£550 - £950",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "Lincolnshire",
+      "addressCountry": "UK"
+    }
+  }
+  </script>
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Premium Typography Layer -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-main: #f8fafc; 
+      --bg-card: rgba(255, 255, 255, 0.75); 
+      --border-color: rgba(15, 23, 42, 0.08); 
+      --accent: #059669; 
+      --text-main: #0f172a; 
+      --text-muted: #64748b; 
+    }
+
+    body {
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      letter-spacing: -0.01em;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Technical Light Background Grid */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; width: 100vw; height: 100vh;
+      background-image: 
+        linear-gradient(rgba(15, 23, 42, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(15, 23, 42, 0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
+      z-index: -2;
+      pointer-events: none;
+    }
+
+    /* Ambient Animated Glow */
+    .ambient-glow {
+      position: absolute;
+      top: -10%; left: -10%;
+      width: 60vw; height: 60vw;
+      background: radial-gradient(circle, rgba(16,185,129,0.08) 0%, rgba(255,255,255,0) 70%);
+      z-index: -1;
+      border-radius: 50%;
+      animation: pulseGlow 8s infinite alternate;
+      pointer-events: none;
+    }
+    
+    .ambient-glow-right {
+      top: 40%; left: auto; right: -20%;
+      background: radial-gradient(circle, rgba(6,182,212,0.06) 0%, rgba(255,255,255,0) 70%);
+      animation: pulseGlow 10s infinite alternate-reverse;
+    }
+
+    @keyframes pulseGlow {
+      0% { transform: scale(1) translate(0, 0); opacity: 0.8; }
+      100% { transform: scale(1.15) translate(3%, 3%); opacity: 1; }
+    }
+
+    h1, h2, h3, h4, .font-heading {
+      font-family: 'Space Grotesk', sans-serif;
+      letter-spacing: -0.03em;
+      color: var(--text-main);
+    }
+
+    .text-gradient {
+      background: linear-gradient(135deg, #059669 0%, #0891b2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Scroll Animation Classes */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Bento Grid */
+    .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 32px; 
+    }
+
+    .bento-card {
+      background-color: var(--bg-card);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--border-color);
+      border-radius: 28px;
+      padding: 48px; 
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 10px 40px rgba(15, 23, 42, 0.03);
+    }
+
+    .bento-card:hover {
+      border-color: rgba(16, 185, 129, 0.3);
+      transform: translateY(-5px) scale(1.01);
+      box-shadow: 0 20px 40px rgba(16, 185, 129, 0.06), 0 1px 3px rgba(0,0,0,0.02);
+    }
+
+    .card-meta-bar {
+      display: flex;
+      flex-direction: column;
+      gap: 10px; 
+      margin-bottom: 32px;
+    }
+    @media (min-width: 576px) {
+      .card-meta-bar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    .archetype-tag {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      background: rgba(16, 185, 129, 0.08);
+      padding: 6px 14px;
+      border-radius: 8px;
+      border: 1px solid rgba(16, 185, 129, 0.15);
+    }
+
+    /* Dark Mockup Previews inside Light Cards */
+    .portfolio-preview {
+      background: #090d16;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(15, 23, 42, 0.25);
+      position: relative;
+    }
+    
+    .window-header {
+      background: rgba(255, 255, 255, 0.03);
+      padding: 14px 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .dot { width: 10px; height: 10px; border-radius: 50%; }
+    .dot-1 { background: #ef4444; }
+    .dot-2 { background: #eab308; }
+    .dot-3 { background: #22c55e; }
+
+    .span-7 { grid-column: span 7; }
+    .span-5 { grid-column: span 5; }
+    .span-6 { grid-column: span 6; }
+    .span-12 { grid-column: span 12; }
+
+    @media (max-width: 991px) {
+      .span-7, .span-5, .span-6 { grid-column: span 12; }
+    }
+
+    .text-accent { color: var(--accent); }
+    .text-custom-muted { color: var(--text-muted); }
+    
+    /* Premium Contrast Buttons */
+    .btn-premium {
+      background: #0f172a; 
+      color: #ffffff;
+      font-weight: 700;
+      border-radius: 14px;
+      padding: 16px 32px;
+      transition: all 0.3s ease;
+      border: none;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.15);
+    }
+    .btn-premium:hover {
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      color: #ffffff;
+      box-shadow: 0 8px 25px rgba(16, 185, 129, 0.35);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline-premium {
+      border: 1px solid rgba(15, 23, 42, 0.12);
+      color: var(--text-main);
+      border-radius: 14px;
+      padding: 16px 32px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(5px);
+    }
+    .btn-outline-premium:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: rgba(16, 185, 129, 0.05);
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Soft Ambient Background Nodes -->
+  <div class="ambient-glow" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-right" aria-hidden="true"></div>
+
+  <!-- Premium Light Navigation Header -->
+  <nav class="navbar navbar-dark py-4 border-bottom position-relative z-3" style="border-color: var(--border-color) !important; background: rgba(248, 250, 252, 0.8); backdrop-filter: blur(10px);">
+    <div class="container">
+      <a class="navbar-brand fw-bold font-heading fs-4 tracking-tight text-dark" href="/">LINCS<span class="text-accent">_TRADE_SITES</span></a>
+      <div class="d-flex align-items-center gap-2">
+        <span class="small text-custom-muted d-none d-sm-inline">South Lincolnshire Trade Architecture</span>
+        <a href="#contact" class="btn btn-outline-premium btn-sm py-2 px-3 fs-7" style="border-radius: 10px;">Enquire Online</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="container my-5 py-5 reveal">
+    <div class="row align-items-center g-5 pt-4">
+      <div class="col-lg-8">
+        <h1 class="display-3 fw-bold tracking-tight mb-0" style="line-height: 1.05;">
+          High-performance web design & SEO for <span class="text-gradient">Lincolnshire's elite trades.</span>
+        </h1>
+      </div>
+      <div class="col-lg-4">
+        <h2 class="fs-5 text-custom-muted mb-4 ps-lg-4 border-start border-success border-opacity-25 fw-normal" style="line-height: 1.6;">
+          We build robust, lightning-fast digital websites that dominate local Google search networks and drive commercial inbound calls.
+        </h2>
+        <div class="ps-lg-4">
+          <a href="#work" class="btn btn-premium me-2 mb-2">Explore Systems</a>
+          <a href="#pricing" class="btn btn-outline-premium mb-2">Flat Pricing</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content & Bento Grid Workspace -->
+  <main class="container my-5 pb-5">
+    <div class="bento-grid">
+      
+      <!-- Portfolio Module 1 -->
+      <section id="work" class="bento-card span-7 d-flex flex-column justify-content-between reveal" style="transition-delay: 0.1s;">
+        <div>
+          <div class="card-meta-bar">
+            <span class="archetype-tag">DESIGN STUDY // BOSTON</span>
+            <span class="small text-custom-muted fw-semibold">Commercial Haulage & Civils</span>
+          </div>
+          <h3 class="fw-bold mb-2 font-heading">G. R. Clay & Sons</h3>
+          <p class="text-custom-muted small mb-4">A high-tonnage web asset engineered to secure commercial contracts, displaying live fleet availability, quarry material weights, and regulatory compliance data.</p>
+        </div>
+        <div class="portfolio-preview mt-3" aria-hidden="true">
+          <div class="window-header">
+            <div class="dot dot-1"></div><div class="dot dot-2"></div><div class="dot dot-3"></div>
+            <span class="text-muted ms-2" style="font-size:0.65rem; font-family:monospace; opacity: 0.6;">preview.grclaysons.co.uk</span>
+          </div>
+          <div class="p-4" style="background: linear-gradient(135deg, #0f172a 0%, #020617 100%); min-height: 200px;">
+            <div class="row align-items-center h-100">
+              <div class="col-8">
+                <span style="font-size:0.55rem; letter-spacing: 1px; color: #10b981;" class="fw-bold font-heading d-block mb-1">AGGREGATE LOGISTICS & BULK EXCAVATIONS</span>
+                <div class="text-white my-1 fs-5 fw-bold font-heading">Heavy Haulage Solutions Across the East Midlands.</div>
+                <div class="d-flex gap-2 mt-3">
+                  <div class="btn btn-sm py-1 px-2 text-white" style="font-size:0.55rem; font-weight:700; background: #020617; border: 1px solid rgba(255,255,255,0.2);">Download Fleet Spec</div>
+                  <div class="btn btn-sm py-1 px-2 text-dark font-heading fw-bold" style="font-size:0.55rem; background: #10b981; border: 1px solid #10b981;">Get Tonnage Quote</div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="rounded border border-secondary border-opacity-30 w-100" style="height: 120px; background: url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=400&auto=format&fit=crop') center/cover;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Module 2 -->
+      <section class="bento-card span-5 d-flex flex-column justify-content-between reveal" style="transition-delay: 0.2s;">
+        <div>
+          <div class="card-meta-bar">
+            <span class="archetype-tag">DESIGN STUDY // STAMFORD</span>
+            <span class="small text-custom-muted fw-semibold">Premium Joinery Architecture</span>
+          </div>
+          <h3 class="fw-bold mb-2 font-heading">The Stamford Oak Co.</h3>
+          <p class="text-custom-muted small mb-4">A visual, high-end showcase system built exclusively to frame high-ticket structural oak framing installations.</p>
+        </div>
+        <div class="portfolio-preview mt-3" aria-hidden="true">
+          <div class="window-header">
+            <div class="dot dot-1"></div><div class="dot dot-2"></div><div class="dot dot-3"></div>
+          </div>
+          <div class="p-4 text-center d-flex flex-column justify-content-center" style="background: url('https://images.unsplash.com/photo-1628744876497-eb30460be9f6?q=80&w=600&auto=format&fit=crop') center/cover; min-height: 200px; position: relative;">
+            <div style="position: absolute; top:0; left:0; right:0; bottom:0; background: rgba(17, 24, 39, 0.85);"></div>
+            <div class="position-relative z-1">
+              <span style="font-size:0.6rem; letter-spacing:3px; color: #fbbf24;" class="d-block font-heading mb-1 fw-bold">STAMFORD OAK</span>
+              <div class="w-25 mx-auto my-2 border-bottom border-warning border-opacity-25"></div>
+              <p class="text-white" style="font-size:0.6rem; max-width:90%; margin: 0 auto 16px; line-height: 1.5; font-weight: 300;">Hand-crafting traditional structural oak framing, garden pavilions & luxury extensions.</p>
+              <div class="p-2 border border-warning border-opacity-50 rounded text-warning" style="font-size:0.55rem; max-width:150px; margin:0 auto; background: rgba(217,119,6,0.1); font-weight: 700; cursor: pointer; backdrop-filter: blur(4px);">
+                View Handcrafted Portfolio
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Web Design Pricing Package 1 -->
+      <section id="pricing" class="bento-card span-6 d-flex flex-column justify-content-between reveal" style="transition-delay: 0.1s;">
+        <div>
+          <div class="card-meta-bar">
+            <span class="archetype-tag text-dark" style="border-color: rgba(15,23,42,0.1); background: rgba(15,23,42,0.04);">THE ANCHOR PACK</span>
+            <span class="text-accent fw-bold small">Local SEO Domination</span>
+          </div>
+          <h3 class="display-5 fw-bold mb-3">£550 <span class="fs-6 text-custom-muted fw-normal">Complete System Build</span></h3>
+          <p class="text-custom-muted mb-4">A complete, custom-engineered single-page blueprint designed to out-rank local generic directories and capture high-intent inbound emergency telephone calls.</p>
+          <ul class="list-unstyled text-custom-muted small d-grid gap-3">
+            <li><i class="bi bi-cpu text-accent me-2"></i> Custom Hand-Coded Architecture (No slow builders)</li>
+            <li><i class="bi bi-geo-alt text-accent me-2"></i> Full Google Business Profile Optimization & Sync</li>
+            <li><i class="bi bi-phone text-accent me-2"></i> Blazing-Fast Mobile Layout for Site Inbound Calls</li>
+            <li><i class="bi bi-code-slash text-accent me-2"></i> Structured Local Schema Coding for Map Placement</li>
+          </ul>
+        </div>
+        <div class="bg-white p-3 rounded-4 border mt-4 d-flex justify-content-between align-items-center" style="border-color: var(--border-color) !important;">
+          <span class="small text-custom-muted">Managed Server Hosting & Core Updates</span>
+          <span class="fw-bold">£60<span class="text-custom-muted small fw-normal">/yr</span></span>
+        </div>
+      </section>
+
+      <!-- Web Design Pricing Package 2 -->
+      <section class="bento-card span-6 d-flex flex-column justify-content-between reveal" style="transition-delay: 0.2s;">
+        <div>
+          <div class="card-meta-bar">
+            <span class="archetype-tag text-dark" style="border-color: rgba(15,23,42,0.1); background: rgba(15,23,42,0.04);">THE ENTERPRISE GRID</span>
+            <span class="text-accent fw-bold small">Commercial Growth</span>
+          </div>
+          <h3 class="display-5 fw-bold mb-3">£950 <span class="fs-6 text-custom-muted fw-normal">Multi-Page Pipeline</span></h3>
+          <p class="text-custom-muted mb-4">Engineered for commercial contractors, multi-crew fleets, or specialized trade outfits requiring robust multi-sector layouts and tender pipelines.</p>
+          <ul class="list-unstyled text-custom-muted small d-grid gap-3">
+            <li><i class="bi bi-layers text-accent me-2"></i> Up to 6 High-End Documented Service Pages</li>
+            <li><i class="bi bi-images text-accent me-2"></i> Advanced Dynamic Before/After Project Galleries</li>
+            <li><i class="bi bi-file-earmark-check text-accent me-2"></i> Dedicated Tender & Commercial Quote Pipelines</li>
+            <li><i class="bi bi-pen text-accent me-2"></i> Complete Copywriting & Content Management Support</li>
+          </ul>
+        </div>
+        <div class="bg-white p-3 rounded-4 border mt-4 d-flex justify-content-between align-items-center" style="border-color: var(--border-color) !important;">
+          <span class="small text-custom-muted">Managed Server Hosting & Core Updates</span>
+          <span class="fw-bold">£90<span class="text-custom-muted small fw-normal">/yr</span></span>
+        </div>
+      </section>
+
+      <!-- Contact Callout Frame -->
+      <section id="contact" class="bento-card span-12 text-center py-5 reveal" style="background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(16, 185, 129, 0.04) 100%); transition-delay: 0.1s;">
+        <div class="row justify-content-center py-4">
+          <div class="col-lg-7">
+            <h2 class="fw-bold display-6 mb-3">Request a Local Network Audit</h2>
+            <p class="text-custom-muted mb-5">Provide your primary trading sector and location. We will personally analyze your current structural footprint on Google Maps and supply 3 critical layout actions to secure incoming traffic.</p>
+            <form class="row g-3 justify-content-center" action="#" method="POST">
+              <div class="col-sm-8">
+                <input type="email" id="emailInput" aria-label="Enter your business email address" class="form-control form-control-lg bg-white text-dark border shadow-none" placeholder="Enter business email address" required style="border-radius: 14px; font-size: 1rem; padding: 16px 20px; border-color: rgba(15, 23, 42, 0.15) !important;">
+              </div>
+              <div class="col-sm-4">
+                <button type="submit" class="btn btn-premium w-100 h-100" style="font-size: 1rem;">Run Audit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="container py-5 text-center text-custom-muted small border-top reveal" style="border-color: var(--border-color) !important;">
+    <p class="mb-0">&copy; 2026 Lincs Trade Sites. Custom web design for Lincolnshire trades via clean semantic code frameworks.</p>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Scroll Reveal Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const reveals = document.querySelectorAll(".reveal");
+      
+      const revealOnScroll = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        root: null,
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+      });
+
+      reveals.forEach(reveal => {
+        revealOnScroll.observe(reveal);
+      });
+      
+      // Trigger immediately for items already in view on load
+      setTimeout(() => {
+        reveals.forEach(reveal => {
+          const rect = reveal.getBoundingClientRect();
+          if(rect.top < window.innerHeight) {
+            reveal.classList.add("active");
+          }
+        });
+      }, 100);
+    });
+  </script>
+</body>
+</html>
